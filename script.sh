@@ -7,6 +7,7 @@
 #aprovisionamiento de apache
 sudo apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y apache2
+sudo sh -c "echo \<h1\>Hostname: $1\($2\)\<\/h1\> >> /var/www/html/index.html"
 
 #aprovisionamiento de ansible
 
